@@ -1,0 +1,48 @@
+/* ========== واکنش‌گرایی ========== */
+
+/* لپ‌تاپ کوچک / تبلت افقی: دو ستون (مشخصات + اندازه‌ها بالا، مدل‌ها پایین، تمام‌عرض) */
+@media (max-width: 1100px) {
+    .workbench { grid-template-columns: 1fr 1fr; }
+    .workbench > #modelsContainer { grid-column: 1 / -1; }
+    .workbench > #modelsContainer .models-grid {
+        display: grid; grid-template-columns: 1fr 1fr; column-gap: 0;
+    }
+    .workbench > #modelsContainer .models-grid > * { border-inline-start: 0; }
+}
+
+/* گوشی و تبلت عمودی: همه زیر هم */
+@media (max-width: 720px) {
+    .container { padding: 10px 10px 30px; }
+    .workbench, .workbench-lower { grid-template-columns: 1fr; }
+    .workbench > #modelsContainer .models-grid { display: block; }
+
+    .main-header { padding: 14px 14px 12px 62px; }
+    .logo-name { font-size: 1.3rem; }
+    .tagline { font-size: .78rem; }
+
+    .stats-bar { grid-template-columns: 1fr 1fr 1fr; }
+    .stat-card { flex-direction: column; align-items: center; gap: 2px; padding: 10px 4px; }
+    .stat-icon { display: none; }
+    .stat-value { font-size: 1.4rem; }
+    .stat-label { font-size: .78rem; }
+
+    .search-buttons { width: 100%; }
+    .search-buttons button { flex: 1; }
+    #customerList { grid-template-columns: 1fr; }
+
+    .profile-topbar { padding: 12px 12px 12px 62px; }
+    .profile-topbar .back-button { order: 3; }
+    .print-buttons-container { width: 100%; }
+    .print-buttons-container button { flex: 1 1 130px; }
+
+    .frow { grid-template-columns: 84px 1fr; padding: 6px 10px; }
+    .mfield-head { grid-template-columns: 84px 1fr 16px; padding: 6px 10px; }
+
+    /* ورودی‌ها بزرگ‌تر برای لمس — و جلوگیری از زوم iOS */
+    input[type="text"], input[type="tel"], input[type="number"], select, textarea { font-size: 16px; min-height: 44px; }
+    .frow .mcell-input, .frow .text-input { min-height: 42px; }
+
+    .profile-action-buttons button { flex: 1 1 46%; max-width: none; }
+    .settings-menu { top: 8px; left: 8px; }
+    .save-indicator { bottom: 130px; }
+}

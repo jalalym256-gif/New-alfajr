@@ -1,0 +1,47 @@
+/* ========== تم‌ها — فقط توکن‌های رنگ رو عوض می‌کنن ========== */
+
+/* روشن = پیش‌فرض (توکن‌ها در main.css) */
+
+body.dark-mode {
+    --bg: #0E1822;
+    --panel: #162433;
+    --panel-2: #1C2D3F;
+    --field: #0F1C28;
+    --text: #E6EDF3;
+    --muted: #93A4B4;
+    --line: #2A3F54;
+    --ink: #10263B;
+    --ink-2: #6FAEE8;
+    --chip: #223A52;
+    --chip-text: #CFE3F7;
+    --btn: #F2B63C;
+    --on-btn: #2A1E00;
+    --ok: #3CC08A;
+    --bad: #EF6B6B;
+    --warn: #E3A23B;
+    --focus: #6FAEE8;
+    --shadow: 0 1px 2px rgba(0, 0, 0, .4);
+}
+body.dark-mode .settings-btn { background: #1C2D3F; }
+body.dark-mode .settings-dropdown .currency-option.selected { background: var(--tape); color: var(--tape-ink); border-color: var(--tape); }
+body.dark-mode .model-suboption.selected { color: #08121C; }
+body.dark-mode .btn-success { color: #04130C; }
+
+/* کلاسیک (ویوید): زمینه‌ی کاهی و دکمه‌های آبی، شبیه نرم‌افزارهای قدیمی خیاطی */
+body.vivid-mode {
+    --bg: #D9C9A3;
+    --panel: #F7F0DE;
+    --panel-2: #EDE2C4;
+    --field: #FFFDF6;
+    --text: #2B2110;
+    --muted: #6B5A38;
+    --line: #BFAA78;
+    --ink: #1F4E8C;
+    --ink-2: #1F4E8C;
+    --chip: #E1D5B0;
+    --chip-text: #2B2110;
+    --btn: #1F4E8C;
+    --tape: #E0A21B;
+    --tape-ink: #3A2800;
+    --focus: #1F4E8C;
+}
